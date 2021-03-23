@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "CloudThings Website connected to VS Code test 2"
+@app.route('/')
+def index():
+    return render_template('index.html')

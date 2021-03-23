@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "CloudThings Website"
+    return "CloudThings Website connected to VS Code"

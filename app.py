@@ -1,10 +1,10 @@
 import pyodbc
 
 from flask import Flask, render_template
-from azure.appconfiguration import AzureAppConfigurationClient
+#from azure.appconfiguration import AzureAppConfigurationClient
 
-connection_str = "CloudThingsConnection"
-client = AzureAppConfigurationClient.from_connection_string(connection_str)
+#connection_str = "CloudThingsConnection"
+#client = AzureAppConfigurationClient.from_connection_string(connection_str)
 
 app = Flask(__name__)
 

@@ -10,7 +10,6 @@ def index():
     posts = conn.execute('SELECT * FROM posts').fetchall()
     conn.close()
     print(posts)
-    posts="[(1, datetime.datetime(2021, 3, 24, 1, 20, 6, 610000), 'First Post', 'Content for the first post'), (2, datetime.datetime(2021, 3, 24, 1, 20, 6, 613000), 'Second Post', 'Content for the second post')]]"
     return render_template('index.html', posts=posts)
 
 

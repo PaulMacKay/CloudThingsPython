@@ -2,21 +2,10 @@
 
 {% block content %}
     <h1>{% block title %} Welcome to CloudThings {% endblock %}</h1>
-    <img src="https://cloudthings.azurewebsites.net/static/images/togaf9-certified.png">
-    <img src="https://cloudthings.azurewebsites.net/static/images/azure-fundamentals-600x600.png">
-    <img src="https://cloudthings.azurewebsites.net/static/images/azure-data-fundamentals-600x600.png">
-    <img src="https://cloudthings.azurewebsites.net/static/images/azure-ai-fundamentals-600x600.png">
-    
-    <img src="/static/images/togaf9-certified.png">
-    <img src="../static/images/togaf9-certified.png">
-
-    <img src="../../static/images/togaf9-certified.png">
-
-
-
     <img src="{{ url_for('static', filename='images/togaf9-certified.png') }}"></img>
-
-    
+    <img src="{{ url_for('static', filename='images/azure-fundamentals-600x600.png') }}"></img>
+    <img src="{{ url_for('static', filename='images/azure-data-fundamentals-600x600.png') }}"></img>
+    <img src="{{ url_for('static', filename='images/azure-ai-fundamentals-600x600.png') }}"></img>
 {% endblock %}
 
 

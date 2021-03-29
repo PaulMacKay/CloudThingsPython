@@ -1,3 +1,6 @@
+
+<!-- 
+
 {% extends 'base.html' %}
 
 {% block content %}
@@ -7,3 +10,21 @@
     <img src="../images/azure-data-fundamentals-600x600.png">
     <img src="../images/azure-ai-fundamentals-600x600.png">
 {% endblock %}
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>CloudThings</title>
+
+    <a href=href="{{ url_for('static') }}"><img src="togaf9-certifed.png" width="82" height="86" title="togaf" alt="togaf"></a>
+
+    <h1>{% block title %} Welcome to CloudThings {% endblock %}</h1>
+    <img src="{{url_for('static', filename='images/togaf9-certifed.png')}}">
+    <img src="{{url_for('static', filename='images/azure-fundamentals-600x600.png')}}">
+    <img src="images/azure-data-fundamentals-600x600.png">
+    <img src="images/azure-ai-fundamentals-600x600.png">
+
+
+</head>

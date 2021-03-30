@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route('/static')
+@app.route('/templates')
 
 def index():
     return render_template('index.html')
